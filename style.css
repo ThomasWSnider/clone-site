@@ -25,3 +25,18 @@
 .video-div-height {
   height: 80vh;
 }
+
+@media screen and (max-width: 700px) {
+  .video-div-height {
+    height: 160vh;
+    align-content: flex-start;
+  }
+
+  .hide-on-mobile {
+    visibility: hidden;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}
