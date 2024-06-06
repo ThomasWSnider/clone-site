@@ -13,6 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Cedarville+Cursive&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
@@ -24,10 +25,10 @@
     <!-- ANCHOR Navbar -->
     <section class="container-fluid bg-primary p-5">
       <div class="row justify-content-between align-content-center">
-        <div class="col-6">
+        <div class="col-12 text-center col-md-6 text-md-start">
           <h2 class="fs-1 text-light">109<span class="birthstone-bounce-regular">leadr</span></h2>
         </div>
-        <div class="col-6 text-end">
+        <div class="col-12 text-center col-md-6 text-md-end">
           <button class="btn btn-primary text-light">FEATURED</button>
           <button class="btn btn-primary text-light">START NOW</button>
         </div>
@@ -39,15 +40,21 @@
     <!-- ANCHOR description -->
     <section class="container-fluid">
       <div class="row bg-primary text-light p-5 pb-0">
-        <div class="col-6 px-5">
+        <div class="col-12 col-md-6 px-5">
           <h1>Your jobs, <b>our news.</b></h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam odio ullam perferendis ut deserunt
             voluptas maiores libero, voluptates explicabo laudantium. Necessitatibus eligendi sunt ab corrupti aliquam
             expedita saepe excepturi? Reiciendis, possimus natus?</p>
-          <button class="btn btn-secondary rounded-pill p-3">🍎 Download for Apple</button>
-          <button class="btn btn-secondary rounded-pill p-3">🤖 Download for Android</button>
+          <button class="btn btn-secondary rounded-pill p-3 m-1">
+            <i class="mdi mdi-apple"></i>
+            Download for Apple
+          </button>
+          <button class="btn btn-secondary rounded-pill p-3 m-1">
+            <i class="mdi mdi-android"></i>
+            Download for Android
+          </button>
         </div>
-        <div class="col-6 pb-0">
+        <div class="col-12 mt-3 pb-0 col-md-6 mt-md-0 ">
           <img class="img-fluid"
             src="https://images.unsplash.com/photo-1605170439002-90845e8c0137?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Four phones displaying greetings of several languages">
@@ -57,45 +64,53 @@
     <div class="container-fluid py-5 bg-light"></div>
     <!-- ANCHOR features -->
     <section class="container-fluid bg-light">
-      <div class="row text-center justify-content-center py-5 bg-light">
-        <div class="col-4">
+      <div class="row text-center justify-content-center py-2 py-md-5 bg-light">
+        <div class="col-8 col-md-4">
           <h2>Features</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ullam nobis officiis earum.</p>
         </div>
       </div>
-      <div class="row text-center justify-content-between py-5 bg-light px">
-        <div class="col-3 ps-5">
-          <h2>💼</h2>
+      <div class="row justify-content-evenly py-5 bg-light">
+        <div class="col-8 col-md-3 p-5 text-center">
+          <h2>
+            <i class="mdi mdi-briefcase-outline"></i>
+          </h2>
           <h3>Your jobs</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ea eveniet pariatur ipsam accusantium est
             impedit.</p>
         </div>
-        <div class="col-3 bg-white p-5 shadow">
-          <h2>📖</h2>
+        <div class="col-8 col-md-3 bg-white p-5 shadow text-center">
+          <h2>
+            <i class="mdi mdi-book-open-variant-outline"></i>
+          </h2>
           <h3>Read news</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nihil tempora repellat facere vero,
             amet voluptatibus.</p>
         </div>
-        <div class="col-3 pe-5">
-          <h2>💬</h2>
+        <div class="col-8 col-md-3 p-5 text-center">
+          <h2>
+            <i class="mdi mdi-chat-outline"></i>
+          </h2>
           <h3>News about Jobs</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, modi inventore expedita labore quasi
             magnam sint.</p>
         </div>
       </div>
 
-      <div class="py-5 bg-light"></div>
+      <div class="py-0 py-md-5 bg-light"></div>
 
     </section>
     <!-- ANCHOR video -->
     <section class="container-fluid bg-primary">
-      <div class="row text-center align-items-center">
-        <div class="col-6 d-flex flex-column justify-content-center video-bg-img text-light">
-          <h2>▶️</h2>
+      <div class="row align-items-center video-div-height">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center video-bg-img text-light text-center">
+          <h2>
+            <i class="mdi mdi-play-circle-outline fs-1"></i>
+          </h2>
           <p>Play Video</p>
         </div>
-        <div class="col-6 p-5 text-light">
-          <h2 class="fs-1">Lorem ipsum dolor sit 15 amet.</h2>
+        <div class="col-12 col-md-6 p-5 text-light">
+          <h2 class="fs-1 pb-5">Lorem ipsum dolor sit 15 amet.</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quas atque laudantium doloribus dignissimos
             et eius eum cum laborum? Placeat rem corrupti, sunt architecto ullam, non consequuntur eius, sequi ducimus
             libero commodi laudantium!</p>
@@ -112,13 +127,21 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, repellendus.</p>
         </div>
         <div class="col-3 d-flex text-light text-center justify-content-around">
-          <h2>🍎</h2>
-          <h2>🤖</h2>
+          <h2>
+            <i class="mdi mdi-apple fs-1"></i>
+          </h2>
+          <h2>
+            <i class="mdi mdi-android fs-1"></i>
+          </h2>
         </div>
         <div class="col-3 d-flex flex-column text-light justify-content-end text-end">
           <div class="text-end">
-            <button class="btn btn-secondary btn-small footer-btn">f</button>
-            <button class="btn btn-secondary btn-small footer-btn">🐦</button>
+            <button class="btn btn-secondary btn-small footer-btn">
+              <i class="mdi mdi-facebook"></i>
+            </button>
+            <button class="btn btn-secondary btn-small footer-btn">
+              <i class="mdi mdi-twitter"></i>
+            </button>
           </div>
           <b>Voluptates - Lorem</b>
         </div>
